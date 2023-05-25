@@ -4,6 +4,7 @@ import Wheel from '../assets/color-wheel-icon.svg'
 import Paint from '../assets/paint_colors.png'
 import Review from '../assets/review_blog.png'
 import RughHome from '../assets/RDhome.png'
+import ColorReview from '../assets/color-review-new.png'
 
 function Work() {
   return (
@@ -16,6 +17,24 @@ function Work() {
 
             {/* container */}
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+                {/* grid item */}
+                <div style={{backgroundImage: `url(${ColorReview})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                    
+                    {/* hover effects */}
+                    <div className='opacity-0 group-hover:opacity-100'>
+                        <span className='text-2xl font-bold text-white tracking-wider'>
+                            Rugh Design Blog
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a href="https://rugh.design/review" target='_blank'>
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            </a>
+                            <a href="https://github.com/roodhouse/rugh-design-landing-page/tree/main/client/src/components/blog" target='_blank'>
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 {/* grid item */}
                 <div style={{backgroundImage: `url(${Bucket})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     

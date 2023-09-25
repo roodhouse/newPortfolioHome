@@ -12,7 +12,7 @@ function About() {
             </div>
                 <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
                     <div className='sm:text-right text-4xl font-bold'>
-                        <p>Hi. I'm John, nice to meet you. Please take a look around.</p>
+                        <p>Hi. I'm John Rugh, it's a pleasure to meet you. Please take a look around.</p>
                     </div>
                     <div>
                         <p>I'm a web developer with a background in small business operations including product development, managerial skills and customer service. Earned a certificate from the University of Texas web development program. Entrepreneur who created, developed and managed new products for Rugh Design. Excited to find ways to utilize a self starter attitude in a new industry.</p>

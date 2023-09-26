@@ -119,7 +119,7 @@
             {
                 "id": 16,
                 "name": "Interactive CC",
-                "thumbnail": "../assets/credit",
+                "thumbnail": "../assets/credit.png",
                 "code": "https://github.com/roodhouse/frontend-mentor-interactive-card",
                 "demo": "https://credit.rugh.us/"
             },

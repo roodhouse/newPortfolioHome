@@ -6,7 +6,7 @@ const other = Data[0].other
 
 function Work() {
   return (
-    <div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
+    <div name='work' className='w-full md:h-full pb-[300px] pt-[100px] text-gray-300 bg-[#0a192f]'>
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div className='pb-8'>
                 <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-[#FF5757]'>Work</p>
@@ -37,6 +37,10 @@ function Work() {
                     </div>
                 </div>
                 ))}
+            </div>
+            <div className='py-8'>
+                <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-[#FF5757]'>Projects</p>
+                <p className='py-6'>// Check out some of my recent mini projects</p>
             </div>
             <div className='grid sm:grid-cols-4 md:grid-cols-6 gap-4'>
                 {/* grid item */}

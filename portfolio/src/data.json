@@ -1,0 +1,178 @@
+[
+    {
+        "featured": [
+            {
+                "id": 0,
+                 "name": "Full Stack Entertainment App",
+                 "thumbnail": "../assets/entertainmentApp.png",
+                 "code": "https://github.com/roodhouse/frontend-mentor-entertainment",
+                 "demo": "https://entertainment.rugh.us"
+                },
+                {
+                    "id": 1,
+                    "name": "Art Gallery",
+                    "thumbnail": "../assets/galleria.png",
+                    "code": "https://github.com/roodhouse/frontend-mentor-galleria",
+                    "demo": "https://galleria.rugh.us"
+                },
+                {
+                    "id": 2,
+                    "name": "Space Tourism",
+                    "thumbnail": "../assets/space.png",
+                    "code": "https://github.com/roodhouse/frontend-mentor-space",
+                    "demo": "https://space.rugh.us"
+                },
+                {
+                    "id": 3,
+                    "name": "Rugh Design Blog",
+                    "thumbnail": "../assets/color-review-new.png",
+                    "code": "https://github.com/roodhouse/rugh-design-landing-page/tree/main/client/src/components/blog",
+                    "demo": "https://rugh.design/review"
+                },
+                {
+                    "id": 4,
+                    "name": "Bucket List Blog",
+                    "thumbnail": "../assets/bucket_list.png",
+                    "code": "https://github.com/roodhouse/project2-CRUD-Happens",
+                    "demo": "https://bucket-list-blog.herokuapp.com/"
+                },
+                {
+                    "id": 5,
+                    "name": "Color Wheel",
+                    "thumbnail": "../assets/color-wheel-icon.svg",
+                    "code": "https://github.com/roodhouse/rugh-design-color-wheel",
+                    "demo": "https://rugh.design/color-wheel/"
+                },
+                {
+                    "id": 6,
+                    "name": "Rugh Design Homepage",
+                    "thumbnail": "../assets/RDhome.png",
+                    "code": "https://github.com/roodhouse/rugh-design-landing-page",
+                    "demo": "https://rugh.design/"
+                },
+                {
+                    "id": 7,
+                    "name": "eBook Landing Page",
+                    "thumbnail": "../assets/paint_colors.png",
+                    "code": "https://www.rughdesign.com/own-your-space/",
+                    "demo": "https://www.rughdesign.com/own-your-space/"
+                },
+                {
+                    "id": 8,
+                    "name": "Re:View",
+                    "thumbnail": "../assets/review_blog.png",
+                    "code": "https://github.com/roodhouse/UPIN",
+                    "demo": "https://review-binary-beast.herokuapp.com/"
+                }
+        ],
+        "other": [
+
+            {
+                "id": 9,
+                "name": "Connect Four",
+                "thumbnail": "../assets/connectFour.png",
+                "code": "https://github.com/roodhouse/frontend-mentor-connect-four",
+                "demo": "https://connect.rugh.us/"
+            },
+            {
+                "id": 10,
+                "name": "Tick Tack Toe",
+                "thumbnail": "../assets/tic.png",
+                "code": "https://github.com/roodhouse/frontend-mentor-tic-tac-toe",
+                "demo": "https://tic.rugh.us/"
+            },
+            {
+                "id": 11,
+                "name": "Comments",
+                "thumbnail": "../assets/comments.png",
+                "code": "https://github.com/roodhouse/frontend-mentor-comments",
+                "demo": "https://comments.rugh.us/"
+            },
+            {
+                "id": 12,
+                "name": "Clock",
+                "thumbnail": "../assets/clock.png",
+                "code": "https://github.com/roodhouse/frontend-mentor-clock",
+                "demo": "https://clock.rugh.us/"
+            },
+            {
+                "id": 13,
+                "name": "Dictionary",
+                "thumbnail": "../assets/dictionary.png",
+                "code": "https://github.com/roodhouse/frontend-mentor-dictionary",
+                "demo": "https://dictionary.rugh.us/"
+            },
+            {
+                "id": 14,
+                "name": "Calculator",
+                "thumbnail": "../assets/calc.png",
+                "code": "https://github.com/roodhouse/frontend-mentor-calculator",
+                "demo": "https://calc.rugh.us/"
+            },
+            {
+                "id": 15,
+                "name": "Countdown",
+                "thumbnail": "../assets/countdown.png",
+                "code": "https://github.com/roodhouse/frontend-mentor-launch-countdown",
+                "demo": "https://countdown.rugh.us/"
+            },
+            {
+                "id": 16,
+                "name": "Interactive CC",
+                "thumbnail": "../assets/credit",
+                "code": "https://github.com/roodhouse/frontend-mentor-interactive-card",
+                "demo": "https://credit.rugh.us/"
+            },
+            {
+                "id": 17,
+                "name": "Age Calculator",
+                "thumbnail": "../assets/age.png",
+                "code": "https://github.com/roodhouse/frontend-mentor-age-calc",
+                "demo": "https://age.rugh.us/"
+            },
+            {
+                "id": 18,
+                "name": "BMI Calculator",
+                "thumbnail": "../assets/bmi.png",
+                "code": "https://github.com/roodhouse/frontend-mentor-bmi",
+                "demo": "https://bmi.rugh.us/"
+            },
+            {
+                "id": 19,
+                "name": "Intro Landing",
+                "thumbnail": "../assets/intro.png",
+                "code": "https://github.com/roodhouse/new-frontend-mentor-intro-project",
+                "demo": "https://intro.rugh.us/"
+            },
+            {
+                "id": 20,
+                "name": "Coming Soon",
+                "thumbnail": "../assets/base.png",
+                "code": "https://github.com/roodhouse/frontend-mentor-base-apparel",
+                "demo": "https://base-apparel.rugh.us/"
+            },
+            {
+                "id": 21,
+                "name": "Pod Request",
+                "thumbnail": "../assets/request.png",
+                "code": "https://github.com/roodhouse/frontend-mentor-pod-request-access",
+                "demo": "https://request.rugh.us/"
+            },
+            {
+                "id": 22,
+                "name": "Skilled",
+                "thumbnail": "../assets/skilled.png",
+                "code": "https://github.com/roodhouse/frontend-mentor-skilled-landing-page",
+                "demo": "https://skilled.rugh.us/"
+            },
+            {
+                "id": 23,
+                "name": "Work It",
+                "thumbnail": "../assets/workit.png",
+                "code": "https://github.com/roodhouse/frontend-mentor-workit-landing-page",
+                "demo": "https://workit.rugh.us/"
+            }
+
+        ]
+    }
+]

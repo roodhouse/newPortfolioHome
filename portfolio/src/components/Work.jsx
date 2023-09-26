@@ -1,13 +1,8 @@
 import React from 'react'
-import Bucket from '../assets/bucket_list.png'
-import Wheel from '../assets/color-wheel-icon.svg'
-import Paint from '../assets/paint_colors.png'
-import Review from '../assets/review_blog.png'
-import RughHome from '../assets/RDhome.png'
-import ColorReview from '../assets/color-review-new.png'
-import Entertainment from '../assets/entertainmentApp.png'
-import Galleria from '../assets/galleria.png'
-import Space from '../assets/space.png'
+import Data from '../data.json'
+
+const featured = Data[0].featured
+const other = Data[0].other
 
 function Work() {
   return (
@@ -19,168 +14,53 @@ function Work() {
             </div>
 
             {/* container */}
-            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4'>
                 {/* grid item */}
-                <div style={{backgroundImage: `url(${Entertainment})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                {featured.map((item) => (
+                    <div key={item.id} style={{backgroundImage: `url(${item.thumbnail})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     {/* hover effects */}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <div className='text-center'>
                             <span className='text-2xl font-bold text-white tracking-wider '>
-                                Full Stack Entertainment App
+                                {item.name}
                             </span>
                         </div>
                         <div className='pt-8 text-center'>
-                            <a href="https://entertainment.rugh.us" target='_blank'>
+                            <a href={item.demo} target='_blank'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            <a href="https://github.com/roodhouse/frontend-mentor-entertainment" target='_blank'>
+                            <a href={item.code} target='_blank'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                         </div>
                     </div>
                 </div>
-                 {/* grid item */}
-                 <div style={{backgroundImage: `url(${Galleria})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                ))}
+            </div>
+            <div className='grid sm:grid-cols-4 md:grid-cols-6 gap-4'>
+                {/* grid item */}
+                {other.map((item) => (
+                    <div key={item.id} style={{backgroundImage: `url(${item.thumbnail})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div-small'>
                     
                     {/* hover effects */}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <div className='text-center'>
-                            <span className='text-2xl font-bold text-white tracking-wider '>
-                                Art Gallery
+                            <span className='font-bold text-white tracking-wider '>
+                                {item.name}
                             </span>
                         </div>
-                        <div className='pt-8 text-center'>
-                            <a href="https://galleria.rugh.us" target='_blank'>
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                            </a>
-                            <a href="https://github.com/roodhouse/frontend-mentor-galleria" target='_blank'>
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                {/* grid item */}
-                <div style={{backgroundImage: `url(${Space})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-                    
-                    {/* hover effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
                         <div className='text-center'>
-                            <span className='text-2xl font-bold text-white tracking-wider '>
-                                Space Tourism
-                            </span>
-                        </div>
-                        <div className='pt-8 text-center'>
-                            <a href="https://space.rugh.us" target='_blank'>
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            <a href={item.demo} target='_blank'>
+                                <button className='text-center rounded-lg px-4 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            <a href="https://github.com/roodhouse/frontend-mentor-space" target='_blank'>
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            <a href={item.code} target='_blank'>
+                                <button className='text-center rounded-lg px-4 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                         </div>
                     </div>
                 </div>
-                {/* grid item */}
-                <div style={{backgroundImage: `url(${ColorReview})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-                    
-                    {/* hover effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
-                        <span className='text-2xl font-bold text-white tracking-wider'>
-                            Rugh Design Blog
-                        </span>
-                        <div className='pt-8 text-center'>
-                            <a href="https://rugh.design/review" target='_blank'>
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                            </a>
-                            <a href="https://github.com/roodhouse/rugh-design-landing-page/tree/main/client/src/components/blog" target='_blank'>
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                {/* grid item */}
-                <div style={{backgroundImage: `url(${Bucket})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-                    
-                    {/* hover effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
-                        <span className='text-2xl font-bold text-white tracking-wider'>
-                            Bucket List Blog
-                        </span>
-                        <div className='pt-8 text-center'>
-                            <a href="https://bucket-list-blog.herokuapp.com/" target='_blank'>
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                            </a>
-                            <a href="https://github.com/roodhouse/project2-CRUD-Happens" target='_blank'>
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div style={{backgroundImage: `url(${Wheel})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-                    
-                    {/* hover effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
-                        <span className='text-2xl font-bold text-white tracking-wider'>
-                            Color Wheel
-                        </span>
-                        <div className='pt-8 text-center'>
-                            <a href="https://rugh.design/color-wheel/" target='_blank'>
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Visit Site</button>
-                            </a>
-                            <a href="https://github.com/roodhouse/rugh-design-color-wheel" target='_blank'>
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div style={{backgroundImage: `url(${RughHome})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-                    
-                    {/* hover effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
-                        <span className='text-2xl font-bold text-white tracking-wider'>
-                            Rugh Design Homepage
-                        </span>
-                        <div className='pt-8 text-center'>
-                            <a href="https://rugh.design/" target='_blank'>
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Visit Site</button>
-                            </a>
-                            <a href="https://github.com/roodhouse/rugh-design-landing-page" target='_blank'>
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div style={{backgroundImage: `url(${Paint})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-                    
-                    {/* hover effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
-                        <span className='text-2xl font-bold text-white tracking-wider'>
-                            eBook Landing Page
-                        </span>
-                        <div className='pt-8 text-center'>
-                            <a href="https://www.rughdesign.com/own-your-space/" target='_blank'>
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Visit Site</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div style={{backgroundImage: `url(${Review})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-                    
-                    {/* hover effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
-                        <span className='text-2xl font-bold text-white tracking-wider'>
-                            Re:View
-                        </span>
-                        <div className='pt-8 text-center'>
-                            <a href="https://review-binary-beast.herokuapp.com/" target='_blank'>
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                            </a>
-                            <a href="https://github.com/roodhouse/UPIN" target='_blank'>
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     </div>
